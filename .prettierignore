@@ -1,0 +1,7 @@
+node_modules
+dist
+.expo
+.expo-shared
+web-build
+webpack.config.js
+.expo@gmail.com /web

@@ -1,0 +1,185 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GameDisplay /> renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "marginBottom": 25,
+      "marginTop": "7%",
+      "paddingLeft": 15,
+      "paddingRight": 15,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#F4F5F7",
+        "borderRadius": 15,
+        "flexDirection": "column",
+        "marginVertical": 5,
+        "padding": 20,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "marginBottom": "5%",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontSize": 16,
+            "paddingBottom": 10,
+            "paddingRight": 10,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "fontSize": 16,
+            "paddingBottom": 10,
+            "paddingRight": 10,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "fontSize": 16,
+            "paddingBottom": 10,
+            "paddingRight": 10,
+          }
+        }
+      >
+        01-10-21
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "flexDirection": "column",
+              "marginBottom": 10,
+              "paddingRight": 10,
+            }
+          }
+        >
+          <Image
+            source={
+              Object {
+                "uri": undefined,
+              }
+            }
+            style={
+              Object {
+                "alignSelf": "center",
+                "height": 60,
+                "resizeMode": "contain",
+                "width": 60,
+              }
+            }
+          />
+          <Text
+            style={
+              Object {
+                "fontSize": 16,
+                "paddingBottom": 10,
+                "paddingRight": 10,
+              }
+            }
+          />
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "flexDirection": "column",
+              "marginBottom": 10,
+              "paddingRight": 10,
+            }
+          }
+        >
+          <Image
+            source={
+              Object {
+                "uri": undefined,
+              }
+            }
+            style={
+              Object {
+                "alignSelf": "center",
+                "height": 60,
+                "resizeMode": "contain",
+                "width": 60,
+              }
+            }
+          />
+          <Text
+            style={
+              Object {
+                "fontSize": 16,
+                "paddingBottom": 10,
+                "paddingRight": 10,
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignContent": "center",
+          "alignSelf": "center",
+          "backgroundColor": "#068C85",
+          "borderRadius": 15,
+          "height": 30,
+          "justifyContent": "center",
+          "width": "50%",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#FFFFFF",
+            "textAlign": "center",
+          }
+        }
+      >
+        More Info
+      </Text>
+    </View>
+  </View>
+</View>
+`;
