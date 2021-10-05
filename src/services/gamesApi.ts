@@ -18,13 +18,13 @@ export const gamesApi = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: baseUrl }),
   endpoints: (builder) => ({
     getMLBGamesDay: builder.query({
-      query: () => createRequest(`games?season=2021&league=1&date=2021-10-08`),
+      query: () => createRequest(`games?season=2021&league=1&date=${today}`),
     }),
     getGameById: builder.query({
       query: (id) => createRequest(`games?id=${id}`),
     }),
     getMLBGamesTomorrow: builder.query({
-      query: () => createRequest(`games?season=2021&league=1&date=2021-10-08`),
+      query: () => createRequest(`games?season=2021&league=1&date=${tomorrow}`),
     }),
   }),
 });
