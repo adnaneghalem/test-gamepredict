@@ -59,7 +59,7 @@ exports[`<GameDisplay /> renders correctly 1`] = `
           }
         }
       >
-        01-10-21
+        05-10-21
       </Text>
     </View>
     <View
