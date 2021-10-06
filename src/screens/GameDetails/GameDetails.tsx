@@ -1,4 +1,4 @@
-import React, { memo, useState } from 'react';
+import React, { memo, useEffect, useState } from 'react';
 import { compose } from 'redux';
 import {
   SafeAreaView,
@@ -10,6 +10,7 @@ import {
   Pressable,
   ActivityIndicator,
 } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { NavigationStackProp } from 'react-navigation-stack';
 
 import { useGetGameByIdQuery } from '../../services/gamesApi';
@@ -32,7 +33,29 @@ function GameDetails({ route }: Props): JSX.Element {
   const [awayScore, setAwayScore] = useState<string>('');
   const [homeScore, setHomeScore] = useState<string>('');
   const [predictions, setPrediction] = useState<Score>();
-  const [storedPrediction, setStoredPrediction] = useState<Score>();
+  const [storedPrediction, setTestValue] = useState<Score>();
+
+  useEffect(() => {
+    getData();
+  }, [storedPrediction]);
+
+  const storeData = async (value: Score) => {
+    try {
+      await AsyncStorage.setItem('userPrediction', JSON.stringify(value));
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const getData = async () => {
+    try {
+      const storedData = (await AsyncStorage.getItem('userPrediction')) || '';
+      const storedPrediction = JSON.parse(storedData);
+      if (storedPrediction !== null) setTestValue(storedPrediction);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   const onSubmit = () => {
     const predictions = { homeScore, awayScore };
@@ -42,7 +65,8 @@ function GameDetails({ route }: Props): JSX.Element {
       Alert.alert('Error', 'Enter a score for both teams1');
     }
     setPrediction(predictions);
-    setStoredPrediction(predictions);
+    storeData(predictions);
+    getData();
   };
 
   if (isFetching) {
