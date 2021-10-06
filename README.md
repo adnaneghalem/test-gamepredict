@@ -38,7 +38,7 @@ $ yarn android
 #### You can also check it online:
 
 ```bash
-https://test-gamepredict.vercel.app/
+https://test-gamespredict.vercel.app/
 ```
 
 #### Things to do:
