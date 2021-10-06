@@ -37,7 +37,7 @@ function GameDetails({ route }: Props): JSX.Element {
 
   useEffect(() => {
     getData();
-  }, [storedPrediction]);
+  }, []);
 
   const storeData = async (value: Score) => {
     try {
