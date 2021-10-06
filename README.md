@@ -48,4 +48,5 @@ https://test-gamepredict.vercel.app/
 - [ ] Improve Styling
 - [ ] Heavier Testing
 - [ ] Display more data per game
+- [ ] Implement Pull To Refresh to the List
 ```
